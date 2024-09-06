@@ -20,6 +20,7 @@ final class ArticleCrudController extends AbstractController
         return $this->render('article_crud/index.html.twig', [
             'articles' => $articleRepository->findAll(),
         ]);
+
     }
 
     #[Route('/new', name: 'app_article_crud_new', methods: ['GET', 'POST'])]
